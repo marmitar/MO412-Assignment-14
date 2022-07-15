@@ -13,4 +13,4 @@ Your quiz questions are contained in the attached file ([all.txt](all.txt)).  Lo
 - [2022-119](https://net-sci-questions.blogspot.com/2022/05/2022-099.html)
 - [2022-130](https://net-sci-questions.blogspot.com/2022/06/2022-130.html)
 
-<!-- ## [Turn in](assignment.pdf) -->
+## [Turn in](assignment.pdf)
