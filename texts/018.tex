@@ -11,3 +11,15 @@ Suppose that we want to build an \textbf{undirected network} with \textbf{200 no
 \end{enumerate}
 
 Original idea by: Hismael Costa
+
+
+\subsection*{Answer: B}
+
+\begin{align*}
+    \langle k \rangle &= \frac{1}{\abs{V}} \sum_{v \in V} \deg(v) \\
+        &= \frac{1}{N} \cdot 2 \abs{E}
+            \tag*{(by the Handshake Lemma)} \\
+        &= \frac{2 L}{N} \\
+        &= \frac{2 \times 600}{200} \\
+        &= 6
+\end{align*}
