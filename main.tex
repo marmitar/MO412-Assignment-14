@@ -65,6 +65,8 @@
 
 \usepackage{wrapfig}
 \usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{multicol}
 \input{simbolos}
 
 \newenvironment{kmatrix}[1][1.3cm]{
@@ -91,9 +93,20 @@
 \newcommand{\red}[1]{\textcolor{red}{\textbf{#1}}}
 \def\qm{?}
 
+\newcommand{\quiz}[2]{\section*{\href{#2}{#1}}}
+
 \begin{document}
     \pagestyle{main}
 
-    For each question, give the answer and a short justification.  Please post your answers on the Classroom.
+    For each question, give the answer and a short justification.
+
+    \input{texts/013}
+    \input{texts/018}
+    \input{texts/036}
+    \input{texts/062}
+    \input{texts/082}
+    \input{texts/094}
+    \input{texts/119}
+    \input{texts/130}
 
 \end{document}
