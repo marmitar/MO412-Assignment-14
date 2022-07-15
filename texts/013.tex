@@ -11,3 +11,18 @@ Choose the option that contains the derivative of $f(x) = g(x) h(x)$, where $g(x
 \end{enumerate}
 
 Original idea by: Maria Tejada Begazo
+
+
+\subsection*{Answer: C}
+
+\begin{align*}
+    \dv{x} f(x) &= \dv{g(x)}{x} h(x) + g(x) \dv{h(x)}{x}
+            \tag*{(by Product Rule)} \\
+        &= {\dv{x^3}{x}} (1 + \ln x)^2 + x^3 \dv{(1 + \ln x)^2}{x} \\
+        &= 3 x^2 (1 + \ln x)^2 + x^3 \cdot 2 (1 + \ln x) \dv{(1 + \ln x)}{x}
+            \tag*{(by Chain Rule)} \\
+        &= 3 x^2 (1 + \ln x)^2 + 2 x^3 (1 + \ln x) \dv{1}{x} + 2 x^3 (1 + \ln x) \dv{\ln x}{x} \\
+        &= 3 x^2 (1 + \ln x)^2 + 2 x^3 (1 + \ln x) \frac{1}{x} \\
+        &= x^2 (1 + \ln x) \cdot (3 (1 + \ln x) + 2) \\
+        &= x^2 (1 + \ln x) (5 + 3 \ln x)
+\end{align*}
