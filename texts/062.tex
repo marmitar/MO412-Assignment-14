@@ -15,19 +15,21 @@ Original idea by: Victor Antonio Menuzzo
 
 \subsection*{Answer: B}
 
-For a Barabási-Albert network $G$ with $m \geq 2$ there is a real number $\epsilon > 0$ such that the diameter $D(G)$ of the network is bounded by \[
-    (1 - \epsilon) \frac{\ln N}{\ln \ln N} \leq D(G) \leq (1 + \epsilon) \frac{\ln N}{\ln \ln N}
+For a Barabási-Albert network $G$ with $m \geq 2$ there is a real number $\epsilon > 0$ such that the diameter $d_{\max}(G)$ of the network is bounded by \[
+    (1 - \epsilon) \frac{\ln N}{\ln \ln N} \leq d_{\max}(G) \leq (1 + \epsilon) \frac{\ln N}{\ln \ln N}
 \] \cite{diameter}
 
-Therefore, if we assume $m > 1$, we can approximate $D(G) \approx \ln N / \ln \ln N$. Then
+~
+
+Therefore, if we assume $m > 1$, we can approximate $d_{\max}(G) \approx \ln N / \ln \ln N$. Then
 \begin{gather*}
-    D(\text{G1})
+    d_{\max}(\text{G1})
         \approx \frac{\ln N(\text{G1})}{\ln \ln N(\text{G1})}
         = \frac{\ln 1000}{\ln \ln 1000}
         = \frac{6.907}{1.933}
         = 3.574
     \\
-    D(\text{G2})
+    d_{\max}(\text{G2})
         \approx \frac{\ln N(\text{G2})}{\ln \ln N(\text{G2})}
         = \frac{\ln 100}{\ln \ln 100}
         = \frac{4.605}{1.527}
