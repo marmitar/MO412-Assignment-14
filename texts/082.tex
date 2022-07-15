@@ -57,3 +57,33 @@ Please, select the option that better represents the stage's topological regimes
 \end{enumerate}
 
 Original idea by: Felipe Crispim da Rocha Salvagnini
+
+
+\subsection*{Answer: D}
+
+Note that \[
+    \langle k \rangle
+        = \frac{2 \langle L \rangle}{N}
+        = \frac{2 \cdot p L_{\max}}{N}
+        = \frac{2 p}{N} \cdot \frac{N (N - 1)}{2}
+        = p (N - 1)
+\]
+
+With that, we can fill the following table to analyze each stage:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{cccccc}
+        \toprule
+        Stage & $p$ & $\langle k \rangle = 999 p$ & Comp. to 1 & Comp. to $\ln N \approx 6.907$ & Regime \\
+        \midrule\midrule
+        I   & 0.01   & 9.99   & $\langle k \rangle > 1$       & $\langle k \rangle > 7 > \ln 1000$ & Connected \\
+        II  & 0.0036 & 3.5964 & $\langle k \rangle > 1$       & $\ln 1000 > 6 > 3.5964$ & Supercritical \\
+        III & 0.001  & 0.999  & $\langle k \rangle \approx 1$ & --- & Critical or Sub \\
+        IV  & 0.0007 & 0.6993 & $1 > \langle k \rangle$       & --- & Subcritical\\
+        V   & 0.007  & 6.993  & $\langle k \rangle > 1$       & $\langle k \rangle \approx \ln 1000$ & Super or Connected \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Since Stage II can only be Supercritical the only viable option  is D, which matches the other regimes.
