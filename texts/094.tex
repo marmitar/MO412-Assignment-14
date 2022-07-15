@@ -13,3 +13,48 @@ Note: Always consider positive values. Consider time measured in hours, and volu
 \end{enumerate}
 
 Original Idea by Rómulo Condori
+
+
+\subsection*{Answer: A}
+
+\setlength{\columnseprule}{0.4pt}
+\raggedcolumns\begin{multicols}{2}
+    By the problem description, \[
+        \pdv{t} L(t) \propto \frac{1}{L(t)}
+    \]
+
+    That is, for some real $k$,
+    \begin{align*}
+        \pdv{L}{t} &= k \frac{1}{L} \\
+        k &= L \dv{L}{t}
+    \end{align*}
+
+    If we integrate in $t$, we get
+    \begin{align*}
+        \int_0^t k \dd{t} &= \int_0^t L \pdv{L}{t} \dd{t} \\
+        k t &= \int_{l_0}^{L(t)} L \dd{L} \\
+        k t &= \eval{\frac{L^2}{2}}_{l_0}^{L(t)} \\
+        k t &= \frac{L(t)^2 - l_0^2}{2}
+    \end{align*}
+
+    Such that \[
+        L(t) = \sqrt{2 k t + l_0^2}
+    \]
+
+    As specified, at $t = 1 \text{h}$, $L(1) = 3 l_0 / 4$, therefore
+    \begin{align*}
+        L(1) = \sqrt{2 k + l_0^2} &= \frac{3 l_0}{4} \\
+            2 k + l_0^2 &= \frac{9 l_0^2}{16} \\
+            32 k + 16 l_0^2 &= 9 l_0^2 \\
+            32 k + 7 l_0^2 &= 0 \\
+            k &= - \frac{7}{32} l_0^2
+    \end{align*}
+
+    Then \begin{align*}
+        L(t) &= \sqrt{- \frac{2 \cdot 7}{32} l_0^2 t + l_0^2} \\
+            &= l_0 \sqrt{- \frac{7}{16} t + 1} \\
+            &= l_0 \frac{\sqrt{- 7 t + 16}}{\sqrt{16}} \\
+            &= \frac{l_0}{4} \sqrt{16 - 7 t}
+    \end{align*}
+\end{multicols}
+\setlength{\columnseprule}{0pt}
